@@ -43,7 +43,7 @@ ul{
 /* end global */
 .landing{
     min-height: 100vh;
-    background-image: url(/imgs/00.jpg);
+    background-image: url(../imgs/00.jpg);
     background-size: cover;
     position: relative;
 }
