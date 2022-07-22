@@ -4,4 +4,4 @@ setInterval(()=>{
     let roundom=Math.floor(Math.random()*imgesArray.length);
     land.style.backgroundImage= 'url("../imgs/'+imgesArray[roundom]+'")';
     
-},50000)
+},5000)
