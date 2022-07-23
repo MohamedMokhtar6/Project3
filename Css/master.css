@@ -10,7 +10,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 :root{
-    --main-color:#2196f3;
+    --main-color:#008b8b;
 
 }
 a{
@@ -41,6 +41,97 @@ ul{
     }
 }
 /* end global */
+.setting{
+    min-height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    z-index: 1000;
+    background-color: white;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    text-align: center;
+}
+.open{
+    left: 0;
+}
+.setting .icon{
+    position: absolute;
+    right: -36px;
+    top: 150px;
+    background-color: white;
+    cursor: pointer;
+}
+.setting i{
+    padding: 10px;
+    
+}
+.setting .set-cont .option-box{
+    padding: 1px 20px 15px;
+    background-color: #e4e3e3;
+    margin: 20px;
+}
+.setting .set-cont .option-box h4{
+    color: black;
+    margin: 20px;
+}
+.setting .set-cont .option-box img{
+    height: 43px;
+    border-radius: 10px;
+}
+.setting .set-cont .option-box .imges li{
+    display: inline-block;
+    margin: 10px 2px 5px 0px;
+    cursor: pointer;
+}
+.setting .set-cont .option-box .imges li:hover{
+    transform: scale(1.2);
+}
+.setting .set-cont .option-box ul{
+    text-align: center;
+    padding: 0;
+}
+.setting .set-cont .option-box .links li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+    opacity: 0.5;
+    background-color: black;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.setting .set-cont .option-box .links li:nth-child(1){
+    background-color: darkcyan;
+}
+.setting .set-cont .option-box .links li:nth-child(2){
+    background-color: violet;
+}
+.setting .set-cont .option-box .links li:nth-child(3){
+    background-color: aquamarine;
+}
+.setting .set-cont .option-box .links li:nth-child(4){
+    background-color: darkgoldenrod;
+}
+.setting .set-cont .option-box .links li:nth-child(5){
+    background-color: tomato;
+}
+
+
+.setting .set-cont .option-box ul .active{
+    opacity: 1;
+    border: 3px solid black;
+}
+
+
 .landing{
     min-height: 100vh;
     background-image: url(../imgs/00.jpg);
@@ -87,7 +178,7 @@ ul{
 }
 .landing header ul li a:hover,
 .landing header ul li a.activ{
-    color: darkcyan;
+    color: var(--main-color);
 }
 
 .landing .text{
@@ -103,10 +194,11 @@ ul{
     font-size: 36px;
 }
 .landing .text h1 span{
-    color: darkcyan;
+    color: var(--main-color);
     font-size: 50px;
 }
 .landing .text p{
     line-height: 1.8;
     font-size: 25px;
+    width: 100% ;
 }
