@@ -41,7 +41,7 @@ colorlis.forEach(li =>{
 
 
 
-let imgesArray = ["/imgs/00.jpg","/imgs/01.png","/imgs/02.png","/imgs/03.jpg"];
+let imgesArray = ["./imgs/00.jpg","./imgs/01.png","./imgs/02.png","./imgs/03.jpg"];
 let land =document.querySelector(".landing");
 const images=document.querySelectorAll(".imges li");
 images.forEach(li=>{
